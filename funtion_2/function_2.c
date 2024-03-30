@@ -1,6 +1,6 @@
 #include"function_2.h"
-
-int value_function_2_1,value_function_2_2,value_function_2_3;
+#include "Header_1.h"
+int value_function_2_1=HEADER_1_MACRO_1,value_function_2_2=HEADER_1_MACRO_1,value_function_2_3=HEADER_1_MACRO_1;
 
 int function_2_func1(int value1,int value2)
 {

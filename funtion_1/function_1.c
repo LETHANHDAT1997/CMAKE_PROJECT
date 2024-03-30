@@ -1,7 +1,7 @@
 #include"function_1.h"
 #include "Header_Inside1_1.h"
 
-int value_function_1_1,value_function_1_2,value_function_1_3;
+int value_function_1_1=HEADER_MACRO_INSIDE1_1_VALUE_0,value_function_1_2=HEADER_MACRO_INSIDE1_1_VALUE_0,value_function_1_3=HEADER_MACRO_INSIDE1_1_VALUE_0;
 
 int function_1_func1(int value1,int value2)
 {

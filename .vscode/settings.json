@@ -3,6 +3,9 @@
         "function_3.h": "c",
         "function_1.h": "c",
         "header_1.h": "c",
-        "header_3.h": "c"
+        "header_3.h": "c",
+        "header_inside2_1.h": "c",
+        "header_inside1_1.h": "c",
+        "function_2.h": "c"
     }
 }
