@@ -1,0 +1,12 @@
+D:/C_project/C_Make_Test/build/CMakeFiles/main.dir
+D:/C_project/C_Make_Test/build/CMakeFiles/edit_cache.dir
+D:/C_project/C_Make_Test/build/CMakeFiles/rebuild_cache.dir
+D:/C_project/C_Make_Test/build/funtion_1/CMakeFiles/my_function_1.dir
+D:/C_project/C_Make_Test/build/funtion_1/CMakeFiles/edit_cache.dir
+D:/C_project/C_Make_Test/build/funtion_1/CMakeFiles/rebuild_cache.dir
+D:/C_project/C_Make_Test/build/funtion_2/CMakeFiles/my_function_2.dir
+D:/C_project/C_Make_Test/build/funtion_2/CMakeFiles/edit_cache.dir
+D:/C_project/C_Make_Test/build/funtion_2/CMakeFiles/rebuild_cache.dir
+D:/C_project/C_Make_Test/build/funtion_3/CMakeFiles/my_function_3.dir
+D:/C_project/C_Make_Test/build/funtion_3/CMakeFiles/edit_cache.dir
+D:/C_project/C_Make_Test/build/funtion_3/CMakeFiles/rebuild_cache.dir

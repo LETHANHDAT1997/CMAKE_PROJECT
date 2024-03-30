@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "funtion_1",
+					"jsonFile" : "directory-funtion_1-Debug-d68cd40934b48dfe2b9a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "funtion_1",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "funtion_2",
+					"jsonFile" : "directory-funtion_2-Debug-94044a29933742a2d38b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "funtion_2",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "funtion_3",
+					"jsonFile" : "directory-funtion_3-Debug-48b50a35e221fe5af22c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "funtion_3",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-6506f1fddc300ce4622e.json",
+					"name" : "main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "my_function_1::@912493ef8d04821fc9f8",
+					"jsonFile" : "target-my_function_1-Debug-9eb346447894eacbd488.json",
+					"name" : "my_function_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "my_function_2::@488c5d03b679831e0ec7",
+					"jsonFile" : "target-my_function_2-Debug-3ce777d9231723c9ec56.json",
+					"name" : "my_function_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "my_function_3::@cc1b3a63ea1f0c5c1952",
+					"jsonFile" : "target-my_function_3-Debug-b5272392c5b369a04220.json",
+					"name" : "my_function_3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/C_project/C_Make_Test/build",
+		"source" : "D:/C_project/C_Make_Test"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

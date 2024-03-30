@@ -1,0 +1,19 @@
+#ifndef _HEADER_2_
+#define _HEADER_2_
+
+#define HEADER_2_MACRO_1 1
+#define HEADER_2_MACRO_2 2
+#define HEADER_2_MACRO_3 3
+#define HEADER_2_MACRO_4 4
+#define HEADER_2_MACRO_5 5
+#define HEADER_2_MACRO_6 6
+#define HEADER_2_MACRO_7 7
+#define HEADER_2_MACRO_8 8
+#define HEADER_2_MACRO_9 9
+#define HEADER_2_MACRO_10 10
+#define HEADER_2_MACRO_11 11
+#define HEADER_2_MACRO_12 12
+#define HEADER_2_MACRO_13 13
+#define HEADER_2_MACRO_14 14
+
+#endif 

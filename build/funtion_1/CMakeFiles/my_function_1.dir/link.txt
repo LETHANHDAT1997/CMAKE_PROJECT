@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libmy_function_1.a CMakeFiles/my_function_1.dir/function_1.c.obj
+C:\msys64\mingw64\bin\ranlib.exe libmy_function_1.a
