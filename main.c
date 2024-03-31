@@ -31,6 +31,7 @@ int main()
             return_value=0;
             value1=0;
             value2=0;
+            calculate(10,5);
             break;
     }
     

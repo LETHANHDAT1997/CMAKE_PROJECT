@@ -11,7 +11,10 @@ add_subdirectory(funtion_1)
 add_subdirectory(funtion_2)
 add_subdirectory(funtion_3)
 
-add_executable(main main.c)
+set(SOURCES main.c funtion_3/function_3.c)
+
+# add_executable(main main.c)
+add_executable(main ${SOURCES})
 
 target_link_libraries(main PUBLIC my_function_1 my_function_2 my_function_3)
 

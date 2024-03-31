@@ -53,3 +53,11 @@ int function_3_call(enum_function3 mode)
     }
     return return_value;
 }
+
+
+int calculate(int value1,int value2)
+{
+    static int return_value=0;
+    return_value=value1+value2;
+    return return_value;
+}

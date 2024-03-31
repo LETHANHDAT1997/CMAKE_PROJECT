@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/funtion_3/function_3.c.obj"
+  "CMakeFiles/main.dir/funtion_3/function_3.c.obj.d"
   "CMakeFiles/main.dir/main.c.obj"
   "CMakeFiles/main.dir/main.c.obj.d"
   "libmain.dll.a"

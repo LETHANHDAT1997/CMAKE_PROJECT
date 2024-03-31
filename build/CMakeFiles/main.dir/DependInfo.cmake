@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/C_project/C_Make_Test/funtion_3/function_3.c" "CMakeFiles/main.dir/funtion_3/function_3.c.obj" "gcc" "CMakeFiles/main.dir/funtion_3/function_3.c.obj.d"
   "D:/C_project/C_Make_Test/main.c" "CMakeFiles/main.dir/main.c.obj" "gcc" "CMakeFiles/main.dir/main.c.obj.d"
   )
 

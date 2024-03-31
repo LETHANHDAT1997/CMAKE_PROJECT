@@ -167,6 +167,30 @@ my_function_3/fast:
 	$(MAKE) $(MAKESILENT) -f funtion_3\CMakeFiles\my_function_3.dir\build.make funtion_3/CMakeFiles/my_function_3.dir/build
 .PHONY : my_function_3/fast
 
+funtion_3/function_3.obj: funtion_3/function_3.c.obj
+.PHONY : funtion_3/function_3.obj
+
+# target to build an object file
+funtion_3/function_3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/funtion_3/function_3.c.obj
+.PHONY : funtion_3/function_3.c.obj
+
+funtion_3/function_3.i: funtion_3/function_3.c.i
+.PHONY : funtion_3/function_3.i
+
+# target to preprocess a source file
+funtion_3/function_3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/funtion_3/function_3.c.i
+.PHONY : funtion_3/function_3.c.i
+
+funtion_3/function_3.s: funtion_3/function_3.c.s
+.PHONY : funtion_3/function_3.s
+
+# target to generate assembly for a file
+funtion_3/function_3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/funtion_3/function_3.c.s
+.PHONY : funtion_3/function_3.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -203,6 +227,9 @@ help:
 	@echo ... my_function_1
 	@echo ... my_function_2
 	@echo ... my_function_3
+	@echo ... funtion_3/function_3.obj
+	@echo ... funtion_3/function_3.i
+	@echo ... funtion_3/function_3.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
