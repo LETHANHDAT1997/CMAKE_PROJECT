@@ -92,3 +92,36 @@
 
 #     # Ghi chuỗi vào file .c
 #     write_to_c_file(strings_to_write, c_file_path)
+
+
+# import re
+
+# def find_substring_occurrences_in_file(file_path, sub_string):
+#     occurrences = []
+#     with open(file_path, 'r') as file:
+#         line_number = 0
+#         for line in file:
+#             line_number += 1
+#             # Tìm tất cả các vị trí xuất hiện của chuỗi con trong dòng
+#             matches = re.finditer(r'(?<!;)(?<!\*/)' + re.escape(sub_string), line)
+#             for match in matches:
+#                 # Thêm vị trí của mỗi sự xuất hiện vào danh sách occurrences
+#                 occurrences.append((line_number, match.start()))
+#     return occurrences
+
+# def main():
+#     file_path = "example.txt"
+#     sub_string = "test"
+    
+#     occurrences = find_substring_occurrences_in_file(file_path, sub_string)
+    
+#     if occurrences:
+#         print(f"The substring '{sub_string}' appears {len(occurrences)} times in the file.")
+#         print("Positions:")
+#         for occurrence in occurrences:
+#             print(f"Line {occurrence[0]}, Position {occurrence[1]}")
+#     else:
+#         print(f"The substring '{sub_string}' does not appear in the file.")
+
+# if __name__ == "__main__":
+#     main()
