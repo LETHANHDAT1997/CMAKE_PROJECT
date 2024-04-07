@@ -94,34 +94,239 @@
 #     write_to_c_file(strings_to_write, c_file_path)
 
 
-# import re
+# def find_substring_in_file(file_path, sub_string):
+#     with open(file_path, 'r') as file:
+#         previous_line = ""  # Dòng trước đó
+#         line_number = 0
+#         for line in file:
+#             line_number += 1
+#             if sub_string in line:
+#                 print(f"Line {line_number - 1}: {previous_line.strip()}")  # In ra dòng phía trước
+#                 print(f"Line {line_number}: {line.strip()}")  # In ra dòng chứa chuỗi con
+#                 print(f"Position: {line.find(sub_string)}")  # In ra vị trí của chuỗi con trong dòng
 
-# def find_substring_occurrences_in_file(file_path, sub_string):
-#     occurrences = []
+#             previous_line = line  # Lưu trữ dòng hiện tại cho lần lặp tiếp theo
+
+# def main():
+#     file_path = "ten_tep.txt"  # Thay đổi thành đường dẫn tới tệp của bạn
+#     sub_string = "slider_set_callback"  # Thay đổi thành chuỗi con bạn muốn tìm
+
+#     find_substring_in_file(file_path, sub_string)
+
+# if __name__ == "__main__":
+#     main()
+
+# list_keyword_to_break = ["*/",";","}"]
+# def find_substring_in_file(file_path, sub_string):
+#     index = -1
+#     with open(file_path, 'r') as file:
+#         lines_previous = ''
+#         lines = file.readlines()  # Đọc tất cả các dòng trong file vào danh sách
+#         line_number = len(lines)  # Số dòng trong file
+
+#         for line in reversed(lines):  # Lặp ngược lại từ cuối danh sách đến đầu
+#             line_number -= 1  # Giảm số dòng hiện tại
+#             if sub_string in line:
+#                 print(f"Line {line_number + 1}: {line}")  # In ra dòng chứa chuỗi con và số dòng tương ứng
+#                 # Tìm chỉ số của 'Function_name'
+#                 for keyword_index in list_keyword_to_break:
+#                     index = line.find(keyword_index) 
+#                     if(index != -1):
+#                       break
+        
+                    
+
+# def main():
+#     file_path = "ten_tep.txt"  # Thay đổi thành đường dẫn tới tệp của bạn
+#     sub_string = "slider_set_callback"  # Thay đổi thành chuỗi con bạn muốn tìm
+
+#     find_substring_in_file(file_path, sub_string)
+
+# if __name__ == "__main__":
+#     main()
+
+
+# list_keyword_to_break = [   "*/"  ,  ";"   ,  "}"  ]
+# def find_substring_in_file(file_path, sub_string):
+#     is_index_name_function_found = False
+#     index_keyword_found = -1
 #     with open(file_path, 'r') as file:
 #         line_number = 0
 #         for line in file:
 #             line_number += 1
-#             # Tìm tất cả các vị trí xuất hiện của chuỗi con trong dòng
-#             matches = re.finditer(r'(?<!;)(?<!\*/)' + re.escape(sub_string), line)
-#             for match in matches:
-#                 # Thêm vị trí của mỗi sự xuất hiện vào danh sách occurrences
-#                 occurrences.append((line_number, match.start()))
-#     return occurrences
+#             if(is_index_name_function_found == True):
+#                 for keyword_index in list_keyword_to_break:
+#                     index_keyword_found = line.find(keyword_index)
+#             if sub_string in line:
+#                 # print(f"Line {line_number}: {line.strip()}")  # In ra dòng chứa chuỗi con
+#                 # print(f"Position: {line.find(sub_string)}")  # In ra vị trí của chuỗi con trong dòng
+#                 is_index_name_function_found = True
+#             else:
+#                 is_index_name_function_found = False
 
 # def main():
-#     file_path = "example.txt"
-#     sub_string = "test"
-    
-#     occurrences = find_substring_occurrences_in_file(file_path, sub_string)
-    
-#     if occurrences:
-#         print(f"The substring '{sub_string}' appears {len(occurrences)} times in the file.")
-#         print("Positions:")
-#         for occurrence in occurrences:
-#             print(f"Line {occurrence[0]}, Position {occurrence[1]}")
-#     else:
-#         print(f"The substring '{sub_string}' does not appear in the file.")
+#     file_path = "ten_tep.txt"  # Thay đổi thành đường dẫn tới tệp của bạn
+#     sub_string = "slider_set_callback"  # Thay đổi thành chuỗi con bạn muốn tìm
+
+#     find_substring_in_file(file_path, sub_string)
 
 # if __name__ == "__main__":
 #     main()
+
+
+
+
+
+# def find_substring(file_path, sub_string):
+#     index_keyword = [True,True,True,True]
+#     index_keyword_1 = [True,True,True,True]
+#     with open(file_path, 'r') as file:
+#         lines = file.readlines()  # Đọc tất cả các dòng trong file vào danh sách
+#         line_number = len(lines)  # Số dòng trong file
+
+#         # Lặp ngược lại từ cuối danh sách đến đầu
+#         for line in reversed(lines):  
+#             line_number -= 1  # Giảm số dòng hiện tại
+#             if sub_string in line:
+#                 print(f"Line {line_number + 1}: {line}")  # In ra dòng chứa chuỗi con và số dòng tương ứng
+#                 # Tìm chỉ số của 'Function_name'
+#                 index_keyword[0] = line.find('//') 
+#                 index_keyword[1] = line.find('*/') 
+#                 index_keyword[2] = line.find('/*') 
+#                 index_keyword[3] = line.find(sub_string)
+#                 index_keyword[4] = line.find(';')
+#                 index_keyword[5] = line.find('{')
+#                 index_keyword[6] = line.find('}')
+#                 if( index_keyword[0] != -1 and index_keyword[1] != -1 ):
+#                     if( index_keyword[0] <  index_keyword[1] ):
+#                         print("Đúng")
+#                     else:
+#                         print("Sai")
+
+#                 if( index_keyword[2] != -1 and index_keyword[3] != -1 ):
+#                     if( index_keyword[2] >  index_keyword[3] ):
+#                         print("Đúng")  
+#                     else:
+#                         print("Sai")   
+
+#                 if( index_keyword[0] != -1 and index_keyword[3] != -1 ):            
+#                     if( index_keyword[0] >  index_keyword[3] ):
+#                         print("Đúng")  
+#                     else:
+#                         print("Sai")
+
+#                 # if( index_keyword[4] != -1 and index_keyword[0] != -1 and index_keyword[1] != -1 ):         
+#                 #     if( index_keyword[4] > index_keyword[0] and index_keyword[4] < index_keyword[1]):
+#                 #         print("Đúng") 
+#                 #     else:
+#                 #         print("Sai")
+
+                                          
+                            
+# def main():
+#     file_path = "ten_tep.txt"  # Thay đổi thành đường dẫn tới tệp của bạn
+#     sub_string = "slider_set_callback"  # Thay đổi thành chuỗi con bạn muốn tìm
+
+#     find_substring(file_path, sub_string)
+
+# if __name__ == "__main__":
+#     main()
+
+
+# def find_substring_in_file(file_path, sub_string):
+#     with open(file_path, 'r') as file:
+#         line_number = 0
+#         for line in file:
+#             line_number += 1
+#             if sub_string in line:
+#                 print(f"\nLine {line_number}: {line.strip()}")  # In ra dòng chứa chuỗi con
+#                 print(f"Position: {line.find(sub_string)}")  # In ra vị trí của chuỗi con trong dòng
+
+# def main():
+#     file_path = "ten_tep.txt"  # Thay đổi thành đường dẫn tới tệp của bạn
+#     sub_string = "slider_set_callback"  # Thay đổi thành chuỗi con bạn muốn tìm
+
+#     find_substring_in_file(file_path, sub_string)
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+file_path = "ten_tep.txt"  # Thay đổi thành đường dẫn của tệp cần đọc
+sub_string = "slider_set_callback"  # Chuỗi con cần tìm
+
+with open(file_path, 'r') as file:
+    lines = file.readlines()  # Đọc tất cả các dòng trong file vào một danh sách
+for i, line in enumerate(lines):
+    position_keyword_end_comment = []
+    position_keyword_start_comment = []
+    position_keyword_semicolon    = []
+    position_sub_string           = []
+    position_keyword_double_slash = []
+    if sub_string in line:
+
+        count = lines[i].count(f"{sub_string}")  # Số lần xuất hiện của chuỗi "*/"
+        position_sub_string = [pos for pos, char in enumerate(line) if line.startswith(f"{sub_string}", pos)]  # Danh sách các vị trí của "*/" trên dòng hiện tại
+        print(f"Found '{sub_string}' at line {i+1}, {count} times, position_sub_string: {position_sub_string}")
+
+        if "*/" in lines[i]:
+            count = lines[i].count("*/")  # Số lần xuất hiện của chuỗi "*/"
+            position_keyword_end_comment = [pos for pos, char in enumerate(line) if line.startswith("*/", pos)]  # Danh sách các vị trí của "*/" trên dòng hiện tại
+            print(f"Found '*/' before '{sub_string}' at line {i+1}, {count} times, position_keyword_end_comment: {position_keyword_end_comment}")
+        else:
+            print(f"No '*/' before '{sub_string}' at line {i+1}")
+
+        if "/*" in lines[i]:
+            count = lines[i].count("/*")  # Số lần xuất hiện của chuỗi "/*"
+            position_keyword_start_comment = [pos for pos, char in enumerate(line) if line.startswith("/*", pos)]  # Danh sách các vị trí của "/*" trên dòng hiện tại
+            print(f"Found '/*' before '{sub_string}' at line {i+1}, {count} times, position_keyword_start_comment: {position_keyword_start_comment}")
+        else:
+            print(f"No '/*' before '{sub_string}' at line {i+1}")
+        
+        if ";" in lines[i]:
+            count = lines[i].count(";")  # Số lần xuất hiện của chuỗi ";"
+            position_keyword_semicolon = [pos for pos, char in enumerate(line) if line.startswith(";", pos)]  # Danh sách các vị trí của ";" trên dòng hiện tại
+            print(f"Found ';' before '{sub_string}' at line {i+1}, {count} times, position_keyword_semicolon: {position_keyword_semicolon}")
+        else:
+            print(f"No ';' before '{sub_string}' at line {i+1}")
+
+        if "//" in lines[i]:
+            count = lines[i].count("//")  # Số lần xuất hiện của chuỗi "//"
+            position_keyword_double_slash = [pos for pos, char in enumerate(line) if line.startswith("//", pos)]  # Danh sách các vị trí của "//" trên dòng hiện tại
+            print(f"Found '//' before '{sub_string}' at line {i+1}, {count} times, position_keyword_double_slash: {position_keyword_double_slash}")
+        else:
+            print(f"No '//' before '{sub_string}' at line {i+1}")
+
+
+# is_sub_string_valid = False
+# for index_sub_string in range(len(position_sub_string)):
+#     for index_start_comment in range(len(position_keyword_start_comment)):
+        
+#         for index_keyword_double_slash in range(len(position_keyword_double_slash)):
+#             if( (position_keyword_double_slash[index_keyword_double_slash] > position_keyword_start_comment[index_start_comment]) and (position_keyword_double_slash[index_keyword_double_slash] < position_sub_string[index_sub_string]) ):
+
+#                 if(position_keyword_start_comment[index_start_comment] < position_sub_string[index_sub_string]):
+#                     for index_end_comment in range(len(position_keyword_end_comment)):
+#                         if( (position_keyword_end_comment[index_end_comment] < position_sub_string[index_sub_string]) and (position_keyword_end_comment[index_end_comment] > position_keyword_start_comment[index_start_comment]) ):
+#                             is_sub_string_valid = True
+#                             break
+#                         else:
+#                             is_sub_string_valid = False
+
+# list_keyword_end_comment=[]
+# for index_sub_string in range(len(position_sub_string)):
+#     for index_end_comment in range(len(position_keyword_end_comment)):
+#         if(position_keyword_end_comment[index_end_comment] < position_sub_string[index_sub_string]):
+#             list_keyword_end_comment.append[]
+        
+
+
+
+
+
+
+
+    
+        
+        
