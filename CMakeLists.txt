@@ -20,3 +20,26 @@ target_link_libraries(main PUBLIC my_function_1 my_function_2 my_function_3)
 
 #cmake -S . -B ./build -G "MinGW Makefiles"
 #mingw32-make -C build
+
+# set(CMAKE_C_FLAGS "-m32")  # Sử dụng cho kiến trúc 32-bit
+# hoặc
+# set(CMAKE_CXX_FLAGS "-m32")  # Sử dụng cho kiến trúc 32-bit
+
+# Hoặc sử dụng cho kiến trúc 64-bit
+# set(CMAKE_C_FLAGS "-m64")
+# hoặc
+# set(CMAKE_CXX_FLAGS "-m64")
+
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -maccumulate-outgoing-args")
+# hoặc
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -maccumulate-outgoing-args")
+
+# if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+#     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -m64")
+#     # hoặc
+#     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m64")
+# else()
+#     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -m32")
+#     # hoặc
+#     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m32")
+# endif()
