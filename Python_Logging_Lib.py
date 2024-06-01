@@ -54,22 +54,22 @@ class Print_Fortmat():
         self.logger.addHandler(self.file_handler) 
 
     def Print_Log_DEBUG(self,str_output ):
-            self.formatter = logging.Formatter(f'{Fore.BLUE}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s')
+            self.formatter = logging.Formatter(f'{Fore.BLUE}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s{Style.RESET_ALL}')
             self.console_handler.setFormatter(self.formatter)
             self.logger.debug(str_output) 
 
     def Print_Log_INFO(self,str_output ):
-            self.formatter = logging.Formatter(f'{Fore.GREEN}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s')
+            self.formatter = logging.Formatter(f'{Fore.GREEN}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s{Style.RESET_ALL}')
             self.console_handler.setFormatter(self.formatter)
             self.logger.info(str_output)               
 
     def Print_Log_WARNING(self,str_output ):
-            self.formatter = logging.Formatter(f'{Fore.YELLOW}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s')
+            self.formatter = logging.Formatter(f'{Fore.YELLOW}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s{Style.RESET_ALL}')
             self.console_handler.setFormatter(self.formatter)
             self.logger.warning(str_output) 
 
     def Print_Log_ERROR(self,str_output ):
-            self.formatter = logging.Formatter(f'{Fore.RED}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s')
+            self.formatter = logging.Formatter(f'{Fore.RED}%(levelname)s - %(name)s - %(message)s - %(filename)s - Line:%(lineno)s - %(asctime)s{Style.RESET_ALL}')
             self.console_handler.setFormatter(self.formatter)
             self.logger.error(str_output) 
 
